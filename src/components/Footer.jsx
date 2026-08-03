@@ -311,7 +311,7 @@ const Footer = () => {
 
               <FaPhoneAlt className="text-[#d6b34c]"/>
 
-              +1 (555) 012-3456
+              03073841913
 
             </p>
 
