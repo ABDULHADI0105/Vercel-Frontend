@@ -132,7 +132,7 @@ overflow-hidden
         text-[34px]
         sm:text-5xl
         md:text-6xl
-        lg:text-[68px]
+        lg:text-[50px]
         "
         >
 
