@@ -224,11 +224,13 @@ const Navbar = () => {
             Register
           </NavLink>
 
-          <a
-            href="https://wa.me/923001234567"
-            className="bg-[#27AE60] text-white px-5 py-3 rounded-full flex items-center gap-2 w-fit"
-          >
-            <FaWhatsapp />
+ <a
+  href="https://wa.me/923114152332"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-[#27AE60] text-white px-5 py-3 rounded-full flex items-center gap-2 w-fit"
+>
+        <FaWhatsapp />
             WhatsApp
           </a>
 
