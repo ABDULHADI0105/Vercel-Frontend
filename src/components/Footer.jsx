@@ -294,7 +294,7 @@ const Footer = () => {
 
               <FaMapMarkerAlt className="text-[#d6b34c] mt-1"/>
 
-              Shahan Cattle Farm, Texas USA
+              Shahan Cattle Farm, Pakistan
 
             </p>
 
