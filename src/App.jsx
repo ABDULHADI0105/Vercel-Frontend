@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+<<<<<<< HEAD
 import CowDetailsPage from "./pages/CowDetailsPage";
 
 // Admin Pages
@@ -70,4 +71,58 @@ function App() {
   );
 }
 
+=======
+import AdminDashboard from "./Admin/pages/AdminDashboard";
+
+function App() {
+
+  return (
+
+    <BrowserRouter>
+
+      <Routes>
+
+        {/* User Home Page */}
+        <Route 
+          path="/" 
+          element={<Home />} 
+        />
+
+        <Route 
+          path="/home" 
+          element={<Home />} 
+        />
+
+
+        {/* Authentication */}
+        <Route 
+          path="/login" 
+          element={<Login />} 
+        />
+
+
+        <Route 
+          path="/register" 
+          element={<Register />} 
+        />
+
+
+        {/* Admin Panel */}
+        <Route 
+          path="/admin/dashboard" 
+          element={<AdminDashboard />} 
+        />
+
+
+      </Routes>
+
+
+    </BrowserRouter>
+
+  );
+
+}
+
+
+>>>>>>> 033f3c4238dc02e0f7de9daa944966956a096e02
 export default App;
