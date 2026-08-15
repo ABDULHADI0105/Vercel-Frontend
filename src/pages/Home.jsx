@@ -3,7 +3,10 @@ import { FaWhatsapp, FaCheckCircle } from "react-icons/fa";
 import aboutImg from "../assets/images/about-farm.jpg";// import { FaCheckCircle } from "react-icons/fa";
 import heroVideo from "../assets/videos/hero.mp4";
 import FeaturedCows from "../components/FeaturedCows";
+import WhyChooseUs from "../components/WhyChooseUs";
+import ContactCTA from "../components/ContactCTA";
 import Footer from "../components/Footer";
+
 
 const Home = () => {
   return (
@@ -584,10 +587,22 @@ overflow-hidden
 {/* ================= FEATURED COWS SECTION END ================= */}
 
 
+  <WhyChooseUs />
+
+
+  {/* Contact CTA */}
+      <ContactCTA />
+
+
+
 {/* ================= Footer SECTION START ================= */}
 
 <Footer />
 {/* ================= Footer COWS SECTION END ================= */}
+
+
+
+
 
     </>
   );

@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import CowDetailsPage from "./pages/CowDetailsPage";
+import Contact from "./pages/Contact";
+
 
 // Admin Pages
 import AdminLayout from "./Admin/components/AdminLayout";
@@ -63,6 +65,8 @@ function App() {
           />
 
         </Route>
+
+        <Route path="/contact" element={<Contact />} />
 
       </Routes>
     </BrowserRouter>
