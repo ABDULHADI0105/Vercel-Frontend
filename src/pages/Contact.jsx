@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import API from "../api/axios";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -46,10 +46,7 @@ const Contact = () => {
     setError("");
 
     try {
-      const response = await axios.post(
-        "https://vercel-backend-production-d74f.up.railway.app/api/contacts",
-        formData
-      );
+      const response = await API.post("/contacts", formData);
 
       setSuccess(
         response.data?.message ||
@@ -113,7 +110,7 @@ const Contact = () => {
       ================================================== */}
       <section className="w-full bg-[#F8F5E9] py-12 sm:py-16 md:py-20">
         <div className="mx-auto grid w-full max-w-[1280px] grid-cols-1 gap-10 px-5 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
-          
+
           {/* ==================================================
               LEFT SIDE
           ================================================== */}
@@ -204,7 +201,7 @@ const Contact = () => {
 
             {/* QUICK BUTTONS */}
             <div className="mt-7 flex flex-col gap-3 min-[420px]:flex-row">
-              
+
               {/* WhatsApp */}
               <a
                 href="https://wa.me/923001234567"
@@ -231,7 +228,7 @@ const Contact = () => {
           ================================================== */}
           <div className="min-w-0">
             <div className="rounded-[18px] border border-[#DDD8C9] bg-white p-5 shadow-[0_12px_30px_rgba(60,50,30,0.07)] sm:p-7 md:p-8">
-              
+
               <h2 className="font-serif text-[21px] font-bold text-[#354238] sm:text-[23px]">
                 Send us a message
               </h2>
@@ -241,10 +238,10 @@ const Contact = () => {
               </p>
 
               <form onSubmit={handleSubmit} className="mt-6">
-                
+
                 {/* NAME + PHONE */}
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  
+
                   {/* NAME */}
                   <div>
                     <label

@@ -12,6 +12,7 @@ import AdminLayout from "./Admin/components/AdminLayout";
 import AdminDashboard from "./Admin/pages/AdminDashboard";
 import AddCow from "./Admin/pages/AddCow";
 import AllCows from "./Admin/pages/AllCows";
+import Users from "./Admin/pages/Users";
 
 function App() {
   return (
@@ -45,6 +46,8 @@ function App() {
           path="/cow-details/:id" 
           element={<CowDetailsPage />} 
         />
+                <Route path="/contact" element={<Contact />} />
+
 
         {/* ================= Admin Panel ================= */}
         <Route path="/admin" element={<AdminLayout />}>
@@ -63,10 +66,12 @@ function App() {
             path="all-cows"
             element={<AllCows />}
           />
+            <Route path="users" element={<Users />} />
 
         </Route>
 
-        <Route path="/contact" element={<Contact />} />
+        
+      
 
       </Routes>
     </BrowserRouter>
